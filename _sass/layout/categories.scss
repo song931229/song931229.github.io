@@ -13,6 +13,10 @@
     padding-right: 12px;
   }
 
+  a {
+    color: seagreen;
+  }
+
   i {
     @extend %category-icon-color;
 
