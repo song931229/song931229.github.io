@@ -9,6 +9,10 @@
 
 #page-category,
 #page-tag {
+  h1 {
+    color: forestgreen;
+  }
+
   ul > li {
     line-height: 1.5rem;
     padding: 0.6rem 0;
@@ -28,6 +32,7 @@
     > a { /* post's title */
       @extend %no-bottom-border;
 
+      color: sandybrown;
       font-size: 1.1rem;
     }
 
@@ -48,6 +53,7 @@
 #page-category,
 #page-tag,
 #access-lastmod {
+
   a:hover {
     @extend %link-hover;
 

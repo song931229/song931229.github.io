@@ -56,12 +56,16 @@
 #post-list {
   margin-top: 1rem;
   padding-right: 0.5rem;
-
+  
   .post-preview {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--main-border-color);
 
+    a {
+      color : sandybrown;
+    }
+    
     a:hover {
       @extend %link-hover;
     }

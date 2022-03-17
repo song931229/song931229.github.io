@@ -56,7 +56,7 @@ img.preview-img {
   font-size: 0.85rem;
 
   .post-meta a:not(:hover) {
-    @extend %link-underline;
+    border-bottom: 1px solid green;
   }
 }
 
@@ -68,10 +68,16 @@ img.preview-img {
   padding-top: 3rem;
   padding-bottom: 4rem;
 
+  [prompt='Older'] {
+    color : rgb(214, 173, 122);
+  }
+  
+  [prompt='Newer'] {
+    color : rgb(214, 173, 122);
+  }
+  
   .btn {
     @include btn-post-nav;
-
-    color: darkgreen;
 
     &:hover {
       background: #2a408e;
