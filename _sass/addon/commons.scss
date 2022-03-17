@@ -2,11 +2,17 @@
   The common styles
 */
 
-/*d2coding 폰트*/
-@import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
+/*D2Coding 폰트*/
+@font-face {
+  font-family: "D2Coding";
+  src: url("../font/D2Coding-Ver1.3.2-20180524.ttf");
+}
 
-/*나눔고딕 폰트*/
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+/*나눔고딕코딩 폰트*/
+@font-face {
+  font-family: "NanumGothicCoding";
+  src: url("../font/NanumGothicCoding.ttf");
+}
 
 html {
   @media (prefers-color-scheme: light) {
