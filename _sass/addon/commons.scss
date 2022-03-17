@@ -340,7 +340,8 @@ img[data-src] {
   @at-root a#{&} {
     @include ml-mr(1px);
     @include pl-pr(2px);
-
+    
+    font-size: 120%;
     border-bottom-style: none !important;
     -webkit-transition: background-color 1.5s ease-in-out; /* Safari prior 6.1 */
     transition: background-color 1.5s ease-in-out;
@@ -356,7 +357,7 @@ img[data-src] {
 .reversefootnote {
   @at-root a#{&} {
     font-size: 1.0rem;
-    line-height: 0.5;
+    line-height: 0rem;
     position: relative;
     //bttom: 0.25em;
     //margin-left: 0.25em;
@@ -460,7 +461,7 @@ img[data-src] {
 
 .post-content {
   font-size: 1.08rem;
-  line-height: 1.8;
+  line-height: 1.6;
   margin-top: 2rem;
   overflow-wrap: break-word;
   word-wrap: break-word;
