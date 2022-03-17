@@ -71,7 +71,7 @@ img.preview-img {
   .btn {
     @include btn-post-nav;
 
-    color: var(--link-color);
+    color: darkgreen;
 
     &:hover {
       background: #2a408e;
@@ -185,6 +185,7 @@ nav[data-toggle=toc] {
 
     h3 {
       @extend %text-color;
+      color:rgb(214, 173, 122);
     }
 
     &:hover {
