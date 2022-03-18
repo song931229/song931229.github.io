@@ -26,6 +26,26 @@
   src: url("../font/NanumGothicCoding-Bold.ttf");
 }
 
+@-webkit-keyframes blink {
+  0% {
+    background-color: black;
+  }
+  
+  100% {
+    background-color: yellow;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: black;
+  }
+  
+  100% {
+    background-color: yellow;
+  }
+}
+
 html {
   @media (prefers-color-scheme: light) {
     &:not([data-mode]),
@@ -343,8 +363,10 @@ img[data-src] {
     &[scroll-focus=true] > p {
       background-color: var(--footnote-target-bg);
       width: fit-content;
-      -webkit-transition: background-color 1.5s ease-in-out; /* Safari prior 6.1 */
-      transition: background-color 1.5s ease-in-out;
+      //-webkit-animation:blink 1.5s ease-in-out infinite alternate;
+      //animation:blink 1.5s ease-in-out infinite alternate;
+      //-webkit-transition: background-color 0.5s ease-in-out; /* Safari prior 6.1 */
+      //transition: background-color 0.5s ease-in-out;
     }
   }
 }
@@ -356,14 +378,16 @@ img[data-src] {
     
     font-size: 120%;
     border-bottom-style: none !important;
-    -webkit-transition: background-color 1.5s ease-in-out; /* Safari prior 6.1 */
-    transition: background-color 1.5s ease-in-out;
+    //-webkit-transition: background-color 0.5s ease-in-out; /* Safari prior 6.1 */
+    //transition: background-color 0.5s ease-in-out;
   }
 
   /* [scroll-focus] added by `smooth-scroll.js` */
   @at-root sup:target:not([scroll-focus]),
   sup[scroll-focus=true] > a#{&} {
-    background-color: var(--footnote-target-bg);
+    -webkit-animation:blink 0.1s ease-in-out 6 alternate;
+    animation:blink 0.1s ease-in-out 6 alternate;
+    //background-color: var(--footnote-target-bg);
   }
 }
 
